@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Barre Life</title>
+    <!-- link to the external CSS file for font awesome icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            color: white;
+            margin: 0;
+            font-family: sans-serif;
+            text-align: center;
+            background-color: #F7DBEA;
+            background-image: url(imgs/park.jpg); 
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+
+        }
+
+        img {
+            max-width: 100%;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .nav-header {
+            background: #FBEAF3;
+            height: 100px;
+            display: flex;
+        }
+
+        .nav-div {
+            margin: auto;
+        }
+
+        .logo-img {
+
+        }
+
+        .search-icon {
+            margin: 30px;
+        }
+
+        .nav-bar {
+            list-style-type: none;
+            display: flex;
+        }
+
+        .nav-bar-link {
+            color: #878787;
+            font-size: 24px;
+            padding: 20px;
+        }
+
+        .footer {
+            height: 40px;
+            background: #ffccff;
+            padding: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nav-header">
+        <div class="nav-div">
+            <ul class="nav-bar">
+                <li><a class="nav-bar-link" href="index.html">Home</a></li>
+                <li><a class="nav-bar-link" href="instructors.html">Our Instructors</a></li>
+                <li><a class="nav-bar-link" href="gallery.html">Photo Gallery</a></li>
+                <li><a class="nav-bar-link" href="https://barrelifenh.com/schedule">Class Schedule</a></li>
+                <li><a class="nav-bar-link" href="contact-info">Contact Us</a></li>
+                <li><a class="nav-bar-link" href="faq.html">FAQ</a></li>
+            </ul>
+        </div>
+        <div class="search-icon">
+        </div>
+    </div>
+
+
+<!-- Page content -->
+    <div class="w3-content" style="max-width:2000px; margin-top:46px">
+        <!-- Automatic Slideshow Images -->
+        <!-- Image 1 -->
+        <div class="mySlides w3-display-container w3-center">
+            <img src="pics/ball.jpg" alt="" style="width:100%">
+            <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32">
+                <h3>In Class</h3>
+            </div>
+        </div>
+        <!-- Image 2 -->
+        <div class="mySlides w3-display-container w3-center">
+            <img src="pics/toes.jpg" alt="" style="width:100%">
+            <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32">
+                <h3>Our Instructors</h3>
+            </div>
+        </div>
+        <!-- Image 3 -->
+        <div class="mySlides w3-display-container w3-center">
+            <img src="pics/bridge.jpg" alt="" style="width:100%">
+            <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32">
+                <h3>Fitness</h3>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script>
+        // Automatic Slideshow - change image every 3 seconds
+        var myIndex = 0;
+        carousel();
+        function carousel() {
+          var i;
+          var x = document.getElementsByClassName("mySlides");
+          for (i = 0; i < x.length; i++) {
+           x[i].style.display = "none";
+          }
+          myIndex++;
+          if (myIndex > x.length) {myIndex = 1}
+          x[myIndex-1].style.display = "block";
+          setTimeout(carousel, 3000);
+        }
+    </script>
+
+    
+
+     <div class="footer">
+        <i class="fa fa-facebook-square fa-2x" href="https://www.facebook.com/BarreLifenh/" aria-hidden="true"></i>
+        <i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i>
+        <i class="fa fa-instagram fa-2x" href="https://www.instagram.com/barre_life/" aria-hidden="true"></i>
+    </div>
+
+</body>
+
+</html>
